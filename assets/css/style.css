@@ -1,0 +1,371 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 100px;
+    color: #000;
+    line-height: 30px;
+    background: rgb(76 105 141);
+    height: 100%;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+.page-loader{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: #272727;
+    top: 0;
+	z-index: 1000;
+}
+.rouded {
+    width: 150px;
+    height: 150px;
+    background: #ffffffa0;
+    border-radius: 50px;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+.searchIcon{
+    position: absolute;
+    right: 60px;
+    top: 3px;
+    cursor: pointer;
+}
+.imgView{
+    position: absolute;
+}
+.roudedSpinner {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+      -webkit-transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes sk-scaleout {
+    0% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 100% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  .p-10{
+    padding: 10px;
+  }
+.openWeather{
+    position: relative;
+    top: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-img{
+    width: 50px;
+    height: 50px;
+}
+.card-img-head{
+    width: 200px;
+    height: 200px;
+}
+.card-img2{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.downDIv{
+    top: 80px;
+    color: #fff;
+}
+.tonight{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 400px;
+    background: #06060654;
+    height: 200px;
+}
+
+.forecast{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.weatherDiv{
+    position: absolute;
+    top: 0;
+}
+
+.col-white{
+    color: #ffffff;
+}
+.inputsect{
+    display: block;
+    align-content: center;
+    height: 80vh;
+}
+.spaceArround{
+    justify-content: space-around;
+}
+.navDiv{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+    height: 50px;
+    background: #06060654;
+    border-radius: 4px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    p{
+        margin-top: 10px;
+    }
+}
+.downDiv{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 200px;
+    height: 100px;
+    background: #06060654;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.align-content-center{
+    align-content: center;
+}
+.navDiv:hover{
+    background: #0a0120;
+}
+.navbar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.searchBtnDiv{
+    float: right;
+    top: 10px;
+}
+.input{
+    width: 300px;
+    border-radius: 50px;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    height: 30px;
+    line-height: 36px;
+    outline: none;
+    padding: 0 15px;
+}
+
+#weather-list {
+    list-style-type: none;
+    padding: 0;
+}
+.weather-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.card{
+    background: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 5px solid #a6a6a6 !important;
+}
+.flex-start{
+    justify-content: flex-start;
+
+}
+.ml-10{
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+.cardDiv{
+    max-width: 25.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.cardsValue{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.divCarousel{
+    max-width: 500px;
+    overflow-x: hidden;
+}
+.leftArrow{
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    cursor: pointer;
+    background: #ffffff40;
+    color: black;
+    width: 25px;
+    text-align: center;
+    border-radius: 7px;
+}
+.leftArrow:hover{
+    background: #fffffff0;
+}
+.rightArrow:hover{
+    background: #fffffff0;
+}
+.downLeftArrow:hover{
+    background: #fffffff0;
+}
+.downRightArrow:hover{
+    background: #fffffff0;
+}
+.rightArrow{
+    position: absolute;
+    right: -15px;
+    top: 4px;
+    cursor: pointer;
+    background: #ffffff40;
+    color: black;
+    width: 25px;
+    text-align: center;
+    border-radius: 7px;
+}
+.downLeftArrow{
+    position: absolute;
+    left: -5px;
+    top: 20px;
+    cursor: pointer;
+    background: #ffffff40;
+    color: black;
+    width: 25px;
+    text-align: center;
+    border-radius: 7px;
+}
+.downRightArrow{
+    position: absolute;
+    right: -15px;
+    top: 20px;
+    cursor: pointer;
+    background: #ffffff40;
+    color: black;
+    width: 25px;
+    text-align: center;
+    border-radius: 7px;
+}
+.divAlign{
+    justify-content: space-between;
+}
+.item{
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    
+    .navbar, .divAlign {
+        flex-direction: column;
+    }
+    .header{
+        padding: 20px 15px 0px 15px;
+    }
+    .input {
+        max-width: 200px;
+        margin-top: 10px;
+    }
+    .searchIcon{
+        position: absolute;
+        right: 13px;
+        top: 11px;
+        cursor: pointer;
+    }
+    #inputPassword2{
+        margin-right: 0px!important;
+    }
+    #grid{
+        width:300px;
+        padding-top: 10px;
+    }
+    .openWeather, .tonight {
+        width: 100%;
+        max-width: 90%;
+        margin: 20px auto;
+    
+    }
+    .divCarousel{
+        max-width: 500px;
+        overflow-x: hidden;
+    }
+    .leftArrow{
+        position: absolute;
+        left: -20px;
+        top: 12px;
+        cursor: pointer;
+        background: #ffffff40;
+        color: black;
+        width: 25px;
+        text-align: center;
+        border-radius: 7px;
+    }
+    .rightArrow{
+        position: absolute;
+        right: -34px;
+        top: 12px;
+        cursor: pointer;
+        background: #ffffff40;
+        color: black;
+        width: 25px;
+        text-align: center;
+        border-radius: 7px;
+    }
+    .cardsValue{
+        width:398px;
+    }
+    .downRightArrow{
+        position: absolute;
+        right: -2px;
+        top: 20px;
+        cursor: pointer;
+        background: #ffffff40;
+        color: black;
+        width: 25px;
+        text-align: center;
+        border-radius: 7px;
+    }
+    
+    
+}
